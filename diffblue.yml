@@ -2,7 +2,7 @@
 cbmcArguments:
   java-generate-no-comments: true
   cover-function-only: false
-  cover-include-pattern: '.*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*'
+  cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
 phases:
 -
   timeout: 60
@@ -11,16 +11,12 @@ phases:
     unwind: 1
     string-non-empty: true
     java-assume-inputs-non-null: true
-    cover-function-only: false
-    cover-include-pattern: '.*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*'
 -
   timeout: 60
   cbmcArguments:
     classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
     max-nondet-array-length: 10
     unwind: 1
-    cover-function-only: false
-    cover-include-pattern: '.*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*'
 -
   timeout: 60
   cbmcArguments:
@@ -29,8 +25,6 @@ phases:
     unwind: 2
     string-non-empty: true
     java-assume-inputs-non-null: true
-    cover-function-only: false
-    cover-include-pattern: '.*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*'
 -
   timeout: 60
   cbmcArguments:
@@ -102,12 +96,12 @@ units:
     - dir: util/target/classes
       file: org/eclipse/rdf4j/common/text/StringUtil.class
       sourceDir: util/src/main/java
-      sourceFile: org/eclipse/rdf4j/common/text/StringUtil.javaunits:
+      sourceFile: org/eclipse/rdf4j/common/text/StringUtil.java
   - target:
     - dir: util/target/classes
       file: org/eclipse/rdf4j/util/iterators/ConvertingIterator.class
       sourceDir: util/src/main/java
-      sourceFile: org/eclipse/rdf4j/util/iterators/ConvertingIterator.javaunits:
+      sourceFile: org/eclipse/rdf4j/util/iterators/ConvertingIterator.java
   - target:
     - dir: util/target/classes
       file: org/eclipse/rdf4j/util/iterators/Iterators.class
