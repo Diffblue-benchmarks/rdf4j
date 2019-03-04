@@ -51,7 +51,7 @@
 	<modules>
 		<module>client</module>
 		<module>util</module>
-		<module>model</module>
+<!--		<module>model</module>
 		<module>rio</module>
 		<module>queryresultio</module>
 		<module>query</module>
@@ -60,7 +60,7 @@
 		<module>queryrender</module>
 		<module>repository</module>
 		<module>http</module>
-		<module>sparqlbuilder</module>
+		<module>sparqlbuilder</module>-->
 	</modules>
 
 	<profiles>
