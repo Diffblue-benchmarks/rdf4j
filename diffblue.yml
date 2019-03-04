@@ -84,9 +84,3 @@ phases:
     max-nondet-array-length: 300
     max-nondet-string-length: 100
     unwind: 10
-units:
-  - target:
-    - dir: util/target/classes
-      file: org/eclipse/rdf4j/common/io/ByteArrayUtil.class
-      sourceDir: util/src/main/java
-      sourceFile: org/eclipse/rdf4j/common/io/ByteArrayUtil.java
