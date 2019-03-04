@@ -2,7 +2,7 @@
 cbmcArguments:
   java-generate-no-comments: true
   cover-function-only: false
-  cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
+  cover-include-pattern: '.*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*'
 phases:
 -
   timeout: 60
@@ -12,7 +12,7 @@ phases:
     string-non-empty: true
     java-assume-inputs-non-null: true
     cover-function-only: false
-    cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
+    cover-include-pattern: '.*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*'
 -
   timeout: 60
   cbmcArguments:
@@ -20,7 +20,7 @@ phases:
     max-nondet-array-length: 10
     unwind: 1
     cover-function-only: false
-    cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
+    cover-include-pattern: '.*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*'
 -
   timeout: 60
   cbmcArguments:
@@ -30,7 +30,7 @@ phases:
     string-non-empty: true
     java-assume-inputs-non-null: true
     cover-function-only: false
-    cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
+    cover-include-pattern: '.*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*'
 -
   timeout: 60
   cbmcArguments:
