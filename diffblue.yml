@@ -11,12 +11,14 @@ phases:
     unwind: 1
     string-non-empty: true
     java-assume-inputs-non-null: true
+    refine: true
 -
   timeout: 60
   cbmcArguments:
     classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
     max-nondet-array-length: 10
     unwind: 1
+    refine: true
 -
   timeout: 60
   cbmcArguments:
@@ -25,6 +27,7 @@ phases:
     unwind: 2
     string-non-empty: true
     java-assume-inputs-non-null: true
+    refine: true
 -
   timeout: 60
   cbmcArguments:
@@ -87,23 +90,3 @@ units:
       file: org/eclipse/rdf4j/common/io/ByteArrayUtil.class
       sourceDir: util/src/main/java
       sourceFile: org/eclipse/rdf4j/common/io/ByteArrayUtil.java
-  - target:
-    - dir: util/target/classes
-      file: org/eclipse/rdf4j/common/xml/XMLUtil.class
-      sourceDir: util/src/main/java
-      sourceFile: org/eclipse/rdf4j/common/xml/XMLUtil.java
-    # Child of XMLUtil.class
-    - dir: util/target/classes
-      file: org/eclipse/rdf4j/common/text/StringUtil.class
-      sourceDir: util/src/main/java
-      sourceFile: org/eclipse/rdf4j/common/text/StringUtil.java
-  - target:
-    - dir: util/target/classes
-      file: org/eclipse/rdf4j/util/iterators/ConvertingIterator.class
-      sourceDir: util/src/main/java
-      sourceFile: org/eclipse/rdf4j/util/iterators/ConvertingIterator.java
-  - target:
-    - dir: util/target/classes
-      file: org/eclipse/rdf4j/util/iterators/Iterators.class
-      sourceDir: util/src/main/java
-      sourceFile: org/eclipse/rdf4j/util/iterators/Iterators.java
