@@ -11,12 +11,16 @@ phases:
     unwind: 1
     string-non-empty: true
     java-assume-inputs-non-null: true
+    cover-function-only: false
+    cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
 -
   timeout: 60
   cbmcArguments:
     classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
     max-nondet-array-length: 10
     unwind: 1
+    cover-function-only: false
+    cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
 -
   timeout: 60
   cbmcArguments:
@@ -25,6 +29,8 @@ phases:
     unwind: 2
     string-non-empty: true
     java-assume-inputs-non-null: true
+    cover-function-only: false
+    cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
 -
   timeout: 60
   cbmcArguments:
