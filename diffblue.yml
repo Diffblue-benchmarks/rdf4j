@@ -1,6 +1,8 @@
 # Tested on Deeptest release 1.12.0
 cbmcArguments:
   java-generate-no-comments: true
+  cover-function-only: false
+  cover-include-pattern: .*(ByteArrayUtil|XMLUtil|ConvertingIterator|Iterators).*
 phases:
 -
   timeout: 60
