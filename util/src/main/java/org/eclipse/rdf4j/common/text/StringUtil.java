@@ -100,7 +100,7 @@ public class StringUtil {
 	 */
 	public static String getAllBefore(String string, char separatorChar) {
 		int index = string.indexOf(separatorChar);
-		return index <= 0 ? string : string.substring(0, index - 1);
+		return index <= 0 ? string : string.substring(0, index);
 	}
 
 	/**
